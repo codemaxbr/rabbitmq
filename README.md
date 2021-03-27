@@ -9,7 +9,7 @@ For more information on php-aqpmqblib package visit their <a href="https://githu
 
 ## 🚀 Installation
 
-Require the `geekshubs/rabbitmq` package in your `composer.json` and update your dependencies:
+Require the `codemaxbr/rabbitmq` package in your `composer.json` and update your dependencies:
 ```sh
 composer require geekshubs/rabbitmq
 ```
@@ -29,14 +29,14 @@ In app/config/app.php add the following :
 The ServiceProvider to the providers array :
 
 ```php
-Geekshubs\RabbitMQ\RabbitMQServiceProvider::class,
+CodemaxBR\RabbitMQ\RabbitMQServiceProvider::class,
 ```
 
 ###  :bulb: Lumen
 
 On Lumen, just register the ServiceProvider manually in your `bootstrap/app.php` file:
 ```php
-$app->register(\Geekshubs\RabbitMQ\RabbitMQServiceProvider::class);
+$app->register(\CodemaxBR\RabbitMQ\RabbitMQServiceProvider::class);
 ```
 
 and add this lines in same file.
