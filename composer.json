@@ -1,0 +1,45 @@
+{
+    "name": "codemaxbr/rabbitmq",
+    "description": "RabbitMQ Adapter for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Maia",
+            "email": "lucas.codemax@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "laravel/framework": "^6|^7|^8",
+        "php-amqplib/php-amqplib": "^3.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^6|^7|^8",
+        "phpunit/phpunit": "^6|^7|^8",
+        "illuminate/support": "^6|^7|^8|^9",
+        "illuminate/contracts": "^6|^7|^8|^9",
+        "squizlabs/php_codesniffer": "^3.5",
+        "orchestra/testbench-dusk": "^4|^5|^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodemaxBR\\RabbitMQ\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodemaxBR\\RabbitMQ\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+      "laravel": {
+            "providers": [
+                "CodemaxBR\\RabbitMQ\\RabbitMQServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+
+}
